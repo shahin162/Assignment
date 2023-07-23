@@ -1,0 +1,28 @@
+<h1>List of Items</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Current Bid</th>
+      <th scope="col">Remaining Time</th>
+      <th scope="col">Image</th>
+      <th scope="col">Operations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of collection">
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.name}}</td>
+      <td>{{item.description}}</td>
+      <td>{{item.bid}}</td>
+      <td>{{item.remainingtime}}</td>
+      <td><img src="{{item.image}}" alt="{{item.name}}" style="width: 50px; height: 50px;"></td>
+      <td>
+        <i (click)="deleteresto(item.id)" class="fa fa-trash" style="font-size: 20px; color: red;"></i>
+        <a routerLink="/update/{{item.id}}"><i class="fa fa-edit" style="font-size: 20px; color: blue;"></i></a>
+      </td>
+    </tr>
+  </tbody>
+</table>

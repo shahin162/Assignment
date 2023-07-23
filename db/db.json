@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "name": "Item 1",
+      "description": "Description for Item 1",
+      "bid": 100,
+      "remainingtime": "2 days",
+      "image": "https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg",
+      "id": 1
+    },
+    {
+      "name": "Item 2",
+      "description": "Description for Item 2",
+      "bid": 50,
+      "remainingtime": "1 day",
+      "image": "https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 2
+    },
+    {
+      "name": "Item 3",
+      "description": "Description for Item 3",
+      "bid": 75,
+      "remainingtime": "3 days",
+      "image": "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 3
+    },
+    {
+      "name": "Item 4",
+      "description": "Description for Item 4",
+      "bid": 120,
+      "remainingtime": "4 days",
+      "image": "https://images.pexels.com/photos/1805053/pexels-photo-1805053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 4
+    }
+  ]
+}

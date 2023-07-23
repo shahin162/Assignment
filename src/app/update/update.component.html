@@ -1,0 +1,28 @@
+<h1>Edit Auction Items</h1>
+<div *ngIf="alart" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success</strong> your updated data has been entered.
+  <button (click)="updatealert()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<form [formGroup]="editResto" (ngSubmit)="updatecollection()">
+  <div class="mb-3">
+    <label for="name" class="form-label">Item Name</label>
+    <input type="text" class="form-control" formControlName="name" placeholder="Enter Name">
+  </div>
+  <div class="mb-3">
+    <label for="startingBid" class="form-label">Starting Bid</label>
+    <input type="text" class="form-control" formControlName="bid" placeholder="Enter Starting Bid">
+  </div>
+  <div class="mb-3">
+    <label for="duration" class="form-label">Duration (in hours)</label>
+    <input type="text" class="form-control" formControlName="duration" placeholder="Enter Duration">
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Description</label>
+    <textarea class="form-control" formControlName="description" placeholder="Enter Description" rows="4"></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="image" class="form-label">Image URL</label>
+    <input type="text" class="form-control" formControlName="image" placeholder="Enter Image URL">
+  </div>
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>
